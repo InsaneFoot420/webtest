@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InsaneKoloběky — Specialista na elektrokoloběžky</title>
+  <meta name="description" content="Servis, tuning a opravy elektrokoloběžek v Milovicích.">
+  <link rel="preload" href="assets/hero.jpg" as="image">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true"></div>
+      <span class="brand-text">INSANEKOLOBĚKY</span>
+    </div>
+    <nav class="nav">
+      <a href="#sluzby">Služby</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="cta" href="#kontakt">DOMLUVIT SERVIS</a>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-label="Hlavní banner">
+      <img class="hero-bg" src="assets/hero.jpg" alt="Elektrokoloběžka s lávou v pozadí">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">SPECIALISTA NA ELEKTROKOLOBĚŽKY</p>
+        <h1>INSANEKOLOBĚKY</h1>
+        <div class="hero-actions">
+          <a class="btn primary" href="#kontakt">Servisovat</a>
+          <a class="btn ghost" href="#sluzby">Co opravím</a>
+          <a class="btn ghost" href="#galerie">Moje práce</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sluzby">
+      <h2>Co dělám nejčastěji</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-ic">🔧</div>
+          <h3>Diagnostika</h3>
+          <p>Řídicí jednotky, motory, snímače, kabeláž — rychle zjistím příčinu.</p>
+        </article>
+        <article class="card">
+          <div class="card-ic">🔋</div>
+          <h3>Baterie &amp; BMS</h3>
+          <p>Test, opravy, repase článků, nastavení BMS a bezpečnost.</p>
+        </article>
+        <article class="card">
+          <div class="card-ic">⚡</div>
+          <h3>Výkon &amp; tuning</h3>
+          <p>Úpravy výkonu, plynule přepínatelný mód, limity 25&nbsp;km/h.</p>
+        </article>
+        <article class="card">
+          <div class="card-ic">🧰</div>
+          <h3>Mechanické opravy</h3>
+          <p>Brzdy, tlumiče, ložiska, hlavová trubka, výměna dílů.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section gallery" id="galerie">
+      <h2>Galerie mé práce</h2>
+      <div class="slider">
+        <button class="sbtn prev" aria-label="Předchozí">‹</button>
+        <div class="track" id="track">
+          <img src="assets/g1.jpg" alt="Oprava koloběžky 1">
+          <img src="assets/g2.jpg" alt="Oprava koloběžky 2">
+          <img src="assets/g3.jpg" alt="Oprava koloběžky 3">
+          <img src="assets/g4.jpg" alt="Oprava koloběžky 4">
+          <img src="assets/g5.jpg" alt="Oprava koloběžky 5">
+          <img src="assets/g6.jpg" alt="Oprava koloběžky 6">
+        </div>
+        <button class="sbtn next" aria-label="Další">›</button>
+      </div>
+      <div class="dots" id="dots"></div>
+    </section>
+
+    <section class="section two-col" id="kontakt">
+      <div class="col">
+        <h2>Kontakt</h2>
+        <p>Servis a tuning elektrokoloběžek — Tyršova 650, 289 24 Milovice.</p>
+        <ul class="contact-list">
+          <li>📞 <a href="tel:+420731253101">+420 731 253 101</a></li>
+          <li>✉️ <a href="mailto:insanebad2@gmail.com">insanebad2@gmail.com</a></li>
+          <li>🕒 Po–Ne dle domluvy</li>
+        </ul>
+
+        <h3>Napište mi</h3>
+        <form class="contact-form" action="sendmail.php" method="POST">
+          <div class="frow">
+            <input type="text" name="name" placeholder="Jméno" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+          </div>
+          <input type="tel" name="phone" placeholder="Telefon">
+          <textarea name="message" rows="5" placeholder="Jakou máte závadu? Preferovaný termín?"></textarea>
+          <input type="hidden" name="to" value="insanebad23@gmail.com">
+          <button type="submit" class="btn primary">Odeslat</button>
+          <p class="form-note">Odesláním souhlasíte se zpracováním údajů pro účely kontaktování.</p>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <aside class="col side">
+        <div class="side-block">
+          <h3>Service</h3>
+          <ul class="check">
+            <li>Expresní diagnostika</li>
+            <li>Havarijní opravy</li>
+            <li>Kalibrace brzd a řízení</li>
+            <li>Firmware &amp; nastavení</li>
+          </ul>
+        </div>
+        <div class="side-block">
+          <h3>Časté otázky</h3>
+          <details>
+            <summary>Jak dlouho trvá oprava?</summary>
+            <p>Diagnostika do 24h, běžné opravy zpravidla do 2–3 dnů.</p>
+          </details>
+          <details>
+            <summary>Děláte svoz?</summary>
+            <p>Ano, po dohodě v okolí Nymburk–Praha.</p>
+          </details>
+          <details>
+            <summary>Záruka na práci?</summary>
+            <p>Na provedené úkony 3 měsíce. Na díly dle výrobce.</p>
+          </details>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" id="faq">
+      <h2>FAQ</h2>
+      <p>Další otázky? Napište mi přes formulář výše.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© 2025 InsaneKoloběky</div>
+    <div class="social">● ● ● ● ●</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

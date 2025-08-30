@@ -1,0 +1,29 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'>
+  <defs>
+    <linearGradient id='bg' x1='0' x2='1'>
+      <stop offset='0' stop-color='#0b0f10'/>
+      <stop offset='1' stop-color='#240b0b'/>
+    </linearGradient>
+    <radialGradient id='lava' cx='50%' cy='75%' r='60%'>
+      <stop offset='0' stop-color='#ff3d00'/>
+      <stop offset='0.5' stop-color='#b31212' stop-opacity='0.9'/>
+      <stop offset='1' stop-color='#0b0f10' stop-opacity='0.8'/>
+    </radialGradient>
+    <filter id='glow' x='-50%' y='-50%' width='200%' height='200%'>
+      <feGaussianBlur stdDeviation='8' result='b'/>
+      <feMerge><feMergeNode in='b'/><feMergeNode in='SourceGraphic'/></feMerge>
+    </filter>
+  </defs>
+  <rect width='100%' height='100%' fill='url(#bg)'/>
+  <ellipse cx='800' cy='760' rx='700' ry='200' fill='url(#lava)' opacity='0.9'/>
+  <g transform='translate(220,300) scale(1.2)' fill='#0d1416' stroke='#06f7c9' stroke-width='6'>
+    <circle cx='190' cy='340' r='90' fill='#0a0f10'/>
+    <circle cx='760' cy='340' r='90' fill='#0a0f10'/>
+    <circle cx='190' cy='340' r='70' fill='none'/>
+    <circle cx='760' cy='340' r='70' fill='none'/>
+    <path d='M260 330 L720 320' />
+    <path d='M720 320 L720 120 L760 120' />
+    <rect x='400' y='200' width='160' height='80' rx='14' fill='#0d1e1f'/>
+    <rect x='665' y='90' width='30' height='140' rx='8' fill='#ff3d00' filter='url(#glow)'/>
+  </g>
+</svg>

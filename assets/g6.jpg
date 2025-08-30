@@ -1,0 +1,5 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800'>
+  <rect width='100%' height='100%' fill='#0b0f10'/>
+  <rect x='30' y='620' width='1140' height='150' rx='18' fill='#0f1517'/>
+  <text x='50%' y='700' font-family='Arial' font-size='34' fill='#06f7c9' text-anchor='middle'>Galerie — nahraďte reálnou fotkou</text>
+</svg>
